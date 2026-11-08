@@ -4,7 +4,7 @@ Site institucional da consultoria de gestão de obras do Grupo Nery. É **estát
 - **Não tem build.**
 - **Não precisa de variáveis de ambiente.**
 
-Publicado em: **https://consultoriagruponery.vercel.app** (Vercel, deploy automático a cada push).
+Publicado em: **https://consultoriagruponery.vercel.app**. Projeto Vercel `consultoriagruponery`, com deploy automático a cada push na branch `claude/adoring-einstein-5hz2zj`. A proteção por login vale só nos previews.
 
 ## Arquivos
 | Arquivo | O que é |
