@@ -3,221 +3,231 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Grupo Nery · Gestão de obras de saneamento e construção civil</title>
-  <meta name="description" content="Consultoria de gestão de obras de saneamento e construção civil: controle de produção, RDO, planejamento semanal, caixa e rotinas, com resultado medido.">
+  <title>Grupo Nery · Gestão de obras de saneamento e infraestrutura</title>
+  <meta name="description" content="Consultoria de engenharia de gestão para obras de saneamento e construção civil: controle de produção, RDO, contratos, planejamento e caixa, com resultado medido.">
   <meta property="og:title" content="Grupo Nery · Gestão de obras">
-  <meta property="og:description" content="Produção que vira medição, caixa previsível e rotina que não depende de pessoas.">
+  <meta property="og:description" content="Produção que vira medição, contrato que vira resultado e caixa previsível.">
   <meta property="og:type" content="website">
+  <meta property="og:image" content="img/hero-terraplenagem.jpg">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
+  <!-- TOPO -->
   <header class="topo" id="topo">
     <div class="wrap topo__in">
       <a href="#inicio" class="marca" aria-label="Grupo Nery, início">
-        <svg class="marca__icone" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="9" fill="var(--azul-escuro)"/><text x="20" y="26.5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#fff" letter-spacing="-.5">GN</text><rect x="9" y="30" width="22" height="2.6" rx="1.3" fill="#2e9e5b"/></svg>
-        <span>Grupo <strong>Nery</strong></span>
+        <svg class="marca__icone" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="currentColor"/><text x="20" y="26.5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#fff">GN</text><rect x="9" y="30" width="22" height="2.6" rx="1.3" fill="var(--verde)"/></svg>
+        <span class="marca__nome">GRUPO <b>NERY</b></span>
       </a>
       <nav class="menu" id="menu" aria-label="Principal">
+        <a href="#inicio">Home</a>
         <a href="#servicos">Serviços</a>
-        <a href="#metodo">Método</a>
-        <a href="#ferramentas">Ferramentas</a>
-        <a href="#cases">Cases</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#contato" class="botao botao--pequeno">Agendar diagnóstico</a>
+        <a href="#realizacoes">Realizações</a>
+        <a href="#sobre">Sobre nós</a>
+        <a href="#contato" class="botao-linha">Fale conosco</a>
       </nav>
       <button class="menu__abrir" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
     </div>
   </header>
 
   <main id="conteudo">
-    <!-- HERÓI -->
-    <section class="heroi" id="inicio">
-      <div class="wrap heroi__in">
-        <div>
-          <p class="selo">Consultoria de gestão de obras · saneamento e construção civil</p>
-          <h1>Obra que se mede é obra que se controla.</h1>
-          <p class="heroi__sub">Organizamos produção, prazo, caixa e rotina da sua empresa com método e ferramentas próprias, para que o que a equipe faz em campo vire <strong>medição, recebimento e resultado</strong>.</p>
-          <div class="heroi__acoes">
-            <a href="#contato" class="botao js-whats">Falar no WhatsApp</a>
-            <a href="#metodo" class="botao botao--linha">Como trabalhamos</a>
+    <!-- HERO (CARROSSEL) -->
+    <section class="hero" id="inicio" aria-roledescription="carrossel" aria-label="Destaques">
+      <div class="hero__slides">
+        <article class="slide ativo" style="--foto:url('img/hero-terraplenagem.jpg')">
+          <div class="slide__txt">
+            <h1>Obra que se mede é obra que se <em>controla</em></h1>
+            <p>Gestão de produção, contratos, prazo e caixa para empresas que executam obras de saneamento e infraestrutura. Do canteiro ao caixa, com método e resultado medido.</p>
+            <a href="#contato" class="botao">Fale conosco</a>
           </div>
-          <ul class="heroi__pontos">
-            <li>Diagnóstico com números, não com opinião</li>
-            <li>Ferramentas prontas para o canteiro</li>
-            <li>Resultado medido contra linha de base</li>
-          </ul>
-        </div>
-        <div class="painel" aria-label="Exemplo ilustrativo de painel de obra">
-          <div class="painel__cab"><span>Painel da obra</span><span class="painel__tag">exemplo ilustrativo</span></div>
-          <div class="painel__kpis">
-            <div><small>Meta da semana</small><b>82%</b><i class="barra"><em style="width:82%"></em></i></div>
-            <div><small>PPC</small><b>74%</b><i class="barra"><em style="width:74%"></em></i></div>
-            <div><small>OS baixadas</small><b>61%</b><i class="barra barra--alerta"><em style="width:61%"></em></i></div>
+        </article>
+        <article class="slide" style="--foto:url('img/hero-estacao.jpg')">
+          <div class="slide__txt">
+            <h2>Trabalhando pela <em>produtividade</em> do saneamento</h2>
+            <p>RDO padrão, relato mínimo pelo WhatsApp e painel por obra: o que a equipe faz em campo vira medição, recebimento e decisão.</p>
+            <a href="#contato" class="botao">Fale conosco</a>
           </div>
-          <div class="painel__lista">
-            <p class="painel__titulo">Por que não cumprimos</p>
-            <div class="pareto"><span>Frente não liberada</span><i style="width:88%"></i></div>
-            <div class="pareto"><span>Espera da contratante</span><i style="width:61%"></i></div>
-            <div class="pareto"><span>Falta de material</span><i style="width:34%"></i></div>
+        </article>
+        <article class="slide" style="--foto:url('img/hero-equipe.jpg')">
+          <div class="slide__txt">
+            <h2>O contrato que você toca, você precisa saber <em>de cor</em></h2>
+            <p>Mapa do contrato, medição com evidência e oportunidades identificadas no prazo, para que o ganho da obra não fique só no papel.</p>
+            <a href="#contato" class="botao">Fale conosco</a>
           </div>
-          <div class="painel__rodape"><span>RDO de hoje</span><b>5 de 6 equipes</b></div>
-        </div>
+        </article>
+        <article class="slide" style="--foto:url('img/hero-solda.jpg')">
+          <div class="slide__txt">
+            <h2>Caixa <em>previsível</em>, decisão pelo provável</h2>
+            <p>Caixa de 13 semanas, recebíveis separados em devido, prometido e provável, e dinheiro preso com dono e prazo.</p>
+            <a href="#contato" class="botao">Fale conosco</a>
+          </div>
+        </article>
+      </div>
+      <button class="hero__seta hero__seta--ant" aria-label="Destaque anterior"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+      <button class="hero__seta hero__seta--prox" aria-label="Próximo destaque"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+      <div class="hero__pontos" role="tablist" aria-label="Escolher destaque"></div>
+      <span class="hero__marca" aria-hidden="true"></span>
+    </section>
+
+    <!-- APRESENTAÇÃO -->
+    <section class="intro">
+      <div class="wrap">
+        <p>Somos uma consultoria de <em>engenharia de gestão formada por quem vive o canteiro de obras</em>, com foco em redes de água e esgoto, manutenção por OS e obras civis. Atuamos ao lado de empreiteiras, prestadoras de concessionárias e construtoras para transformar produção em medição, contrato em resultado e caixa em previsibilidade.</p>
       </div>
     </section>
 
-    <!-- DORES -->
-    <section class="secao" id="dores">
+    <!-- SOLUÇÕES -->
+    <section class="solucoes" id="servicos">
       <div class="wrap">
-        <p class="sobretitulo">O que vemos nas obras</p>
-        <h2>A obra produz, mas a empresa não enxerga.</h2>
-        <div class="grade grade--3">
-          <article class="cartao"><h3>Produção que não vira medição</h3><p>Serviço executado sem foto, sem OS ou sem boletim fica parado meses e trava o caixa.</p></article>
-          <article class="cartao"><h3>Caixa visto de cabeça</h3><p>Promessa de pagamento tratada como dinheiro. O buraco aparece na semana em que já não dá para reagir.</p></article>
-          <article class="cartao"><h3>Apontamento perdido no WhatsApp</h3><p>Relatos soltos, sem quantidade, sem código e sem padrão. Ninguém sabe quanto cada equipe produziu.</p></article>
-          <article class="cartao"><h3>Retrabalho sem custo</h3><p>Retornos e refações consomem equipe e material, mas não aparecem em lugar nenhum.</p></article>
-          <article class="cartao"><h3>Rotina que depende de pessoas</h3><p>Reuniões sem pauta, papéis implícitos, certidões vencendo sem aviso.</p></article>
-          <article class="cartao"><h3>Comercial sem funil</h3><p>Propostas feitas por oportunidade, sem meta, sem critério de margem e risco de pagamento.</p></article>
-        </div>
-      </div>
-    </section>
+        <p class="rotulo">Soluções</p>
+        <h2 class="titulo-centro">Método, ferramentas e rotina que transformam o dia a dia da obra em resultado.</h2>
+        <p class="sub-centro">Usamos Lean Construction e Last Planner, PMBOK, valor agregado, linha de balanço e ferramentas próprias de controle de produção para apoiar quem executa e quem contrata obras.</p>
+        <p class="chamada-perfis">Atendemos diferentes <em>perfis de clientes</em>, com soluções para <b>cada fase</b> da obra:</p>
 
-    <!-- SERVIÇOS -->
-    <section class="secao secao--clara" id="servicos">
-      <div class="wrap">
-        <p class="sobretitulo">Serviços</p>
-        <h2>Gestão de obra de ponta a ponta, do canteiro ao caixa.</h2>
-        <div class="grade grade--3">
-          <article class="servico"><span class="servico__num">01</span><h3>Diagnóstico de obra e empresa</h3><p>Visita, entrevistas em três níveis e linha de base com números: produção, prazo, custo, caixa e qualidade.</p><p class="servico__entrega">Entrega: relatório de 1 página + plano de ação</p></article>
-          <article class="servico"><span class="servico__num">02</span><h3>Controle de produção</h3><p>RDO padrão com a identidade da sua empresa, relato mínimo pelo WhatsApp e consolidação por obra, equipe e serviço.</p><p class="servico__entrega">Entrega: RDO + painel de produção em 30 dias</p></article>
-          <article class="servico"><span class="servico__num">03</span><h3>Planejamento semanal (Last Planner)</h3><p>Compromissos semanais com as equipes, PPC e causas de não cumprimento para atacar o que realmente atrasa.</p><p class="servico__entrega">Entrega: rotina semanal + Pareto de causas</p></article>
-          <article class="servico"><span class="servico__num">04</span><h3>Gestão financeira de obra</h3><p>Caixa de 13 semanas, recebíveis separados em devido, prometido e provável, dinheiro preso com dono e prazo, resultado por obra.</p><p class="servico__entrega">Entrega: caixa projetado + painel por obra</p></article>
-          <article class="servico"><span class="servico__num">05</span><h3>Rotinas e governança</h3><p>Modelo de gestão, papéis claros, manual de rotinas, reuniões fixas e controle fiscal com alerta de validade.</p><p class="servico__entrega">Entrega: manual de rotinas + agenda de gestão</p></article>
-          <article class="servico"><span class="servico__num">06</span><h3>Comercial para empreiteiras</h3><p>Funil por etapa, metas de 90 dias e critério de go/no-go por margem e risco de pagamento.</p><p class="servico__entrega">Entrega: processo comercial + metas</p></article>
-        </div>
-        <div class="atende">
-          <p>Atendemos</p>
-          <ul>
-            <li>Empreiteiras de saneamento</li><li>Construtoras</li><li>Prestadoras de concessionárias</li><li>SAAEs e autarquias</li><li>Prefeituras</li><li>Gerenciadoras</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- MÉTODO -->
-    <section class="secao" id="metodo">
-      <div class="wrap">
-        <p class="sobretitulo">Método</p>
-        <h2>Cinco passos, sempre com número antes e depois.</h2>
-        <ol class="passos">
-          <li><b>Diagnóstico</b><span>Entendemos contrato, obras e dores. Chegamos com hipóteses, não com pacote pronto.</span></li>
-          <li><b>Linha de base</b><span>Medimos como está hoje (produtividade, PPC, retrabalho, caixa) antes de mudar qualquer coisa.</span></li>
-          <li><b>Implantação</b><span>Ferramentas e rotinas no canteiro e no escritório, com treinamento de quem vai usar.</span></li>
-          <li><b>Gestão</b><span>Reunião semanal, relatório ao contratante e ataque aos gargalos pelo Pareto.</span></li>
-          <li><b>Prova de valor</b><span>Antes e depois em dias e em reais, a cada trimestre.</span></li>
-        </ol>
-        <p class="base">Base técnica: Lean Construction e Last Planner, PMBOK, valor agregado (EVM), linha de balanço, Teoria das Restrições, PDCA e 5W2H.</p>
-      </div>
-    </section>
-
-    <!-- FERRAMENTAS -->
-    <section class="secao secao--escura" id="ferramentas">
-      <div class="wrap">
-        <p class="sobretitulo">Ferramentas próprias</p>
-        <h2>Feitas para quem está na obra, não para quem está no escritório.</h2>
-        <div class="ferramentas">
-          <figure class="ferramentas__img">
-            <img src="img/rdo-modelo.png" alt="Modelo de Relatório Diário de Obra do Grupo Nery com campos de equipe, equipamentos e serviços executados" loading="lazy" width="855" height="765">
-            <figcaption>RDO padrão, com logo da sua empresa e da contratante.</figcaption>
-          </figure>
-          <div class="ferramentas__lista">
-            <article><h3>Relato mínimo no WhatsApp</h3><p>O encarregado manda só o essencial em 2 minutos. O sistema monta o RDO e lista o que faltou cobrar.</p>
-              <pre class="zap" aria-label="Exemplo de relato"><code>RDO | OBRA: Centro | DATA: 04/11 | EQUIPE: E03
-PESSOAS: 10
-1) Rua A, 76 | OS 1234 | E01 = 1
-PAROU: espera da contratante | CLI</code></pre></article>
-            <article><h3>RDO padrão por cliente</h3><p>Segurança, clima, equipe, equipamentos, serviços com código, reposição, materiais e fotos, em 2 páginas.</p></article>
-            <article><h3>Painel de produção (SNCP)</h3><p>Previsto x realizado, produtividade por equipe, PPC, causas, retrabalho e OS baixadas, em um arquivo por obra.</p></article>
-            <article><h3>Caixa de 13 semanas</h3><p>Dois cenários, recebíveis por confiança e o dia em que o dinheiro acaba, antes que ele acabe.</p></article>
+        <div class="abas" data-abas>
+          <div class="abas__lista" role="tablist" aria-label="Perfis de cliente">
+            <button role="tab" aria-selected="true" aria-controls="aba-empreiteiras" id="t-empreiteiras">Empreiteiras e construtoras</button>
+            <button role="tab" aria-selected="false" aria-controls="aba-prestadoras" id="t-prestadoras" tabindex="-1">Prestadoras de concessionárias</button>
+            <button role="tab" aria-selected="false" aria-controls="aba-contratantes" id="t-contratantes" tabindex="-1">Concessionárias, SAAEs e prefeituras</button>
+            <button role="tab" aria-selected="false" aria-controls="aba-profissionais" id="t-profissionais" tabindex="-1">Profissionais</button>
+          </div>
+          <div class="abas__caixa">
+            <div class="abas__painel" role="tabpanel" id="aba-empreiteiras" aria-labelledby="t-empreiteiras">
+              <div class="bloco"><small>Diagnóstico</small><h3>Diagnóstico e plano</h3><ul><li>Visita ao trecho e entrevistas</li><li>Linha de base com números</li><li>Mapa do contrato</li><li>Plano de ação de 90 dias</li></ul></div>
+              <div class="bloco"><small>Execução</small><h3>Controle de produção</h3><ul><li>RDO padrão com a sua marca</li><li>Relato mínimo pelo WhatsApp</li><li>Painel de produção por obra</li><li>Planejamento semanal (Last Planner)</li></ul></div>
+              <div class="bloco"><small>Gestão</small><h3>Financeiro e governança</h3><ul><li>Caixa de 13 semanas</li><li>Dinheiro preso com dono e prazo</li><li>Resultado por obra</li><li>Manual de rotinas e reuniões</li></ul></div>
+            </div>
+            <div class="abas__painel" role="tabpanel" id="aba-prestadoras" aria-labelledby="t-prestadoras" hidden>
+              <div class="bloco"><small>Medição</small><h3>Da OS ao recebimento</h3><ul><li>OS executada → vistoriada → baixada</li><li>Evidência por item de medição</li><li>Conciliação da medição</li><li>Ciclo da OS e pendências</li></ul></div>
+              <div class="bloco"><small>Contrato</small><h3>Gestão contratual</h3><ul><li>Mapa e aula do contrato</li><li>Serviços sem OS e interferências</li><li>Aditivos e pleitos (com jurídico parceiro)</li><li>Reajuste e prazos de aviso</li></ul></div>
+              <div class="bloco"><small>Campo</small><h3>Produtividade</h3><ul><li>Produção por equipe e por código</li><li>Causas de não cumprimento</li><li>Retrabalho e custo da qualidade</li><li>Criticidade por obra</li></ul></div>
+            </div>
+            <div class="abas__painel" role="tabpanel" id="aba-contratantes" aria-labelledby="t-contratantes" hidden>
+              <div class="bloco"><small>Acompanhamento</small><h3>Painel de obras</h3><ul><li>Previsto x realizado por contrato</li><li>Criticidade (verde, amarelo, vermelho)</li><li>Relatório quinzenal</li></ul></div>
+              <div class="bloco"><small>Fiscalização</small><h3>Padrão para contratadas</h3><ul><li>Modelo de RDO e evidência</li><li>Critérios de medição claros</li><li>Rotina de vistoria e baixa</li></ul></div>
+              <div class="bloco"><small>Planejamento</small><h3>Frentes liberadas</h3><ul><li>Look-ahead de 4 a 6 semanas</li><li>Mapa de restrições e interferências</li><li>Reunião de coordenação</li></ul></div>
+            </div>
+            <div class="abas__painel" role="tabpanel" id="aba-profissionais" aria-labelledby="t-profissionais" hidden>
+              <div class="bloco"><small>Capacitação</small><h3>Treinamentos</h3><ul><li>Last Planner e PPC na prática</li><li>RDO e apontamento de produção</li><li>Leitura de contrato para engenheiros</li></ul></div>
+              <div class="bloco"><small>Ferramentas</small><h3>Modelos prontos</h3><ul><li>RDO, painel de produção e mensagens</li><li>Caixa de 13 semanas</li><li>Templates de reunião e plano de ação</li></ul></div>
+              <div class="bloco"><small>Acompanhamento</small><h3>Mentoria de gestão</h3><ul><li>Engenheiros e encarregados</li><li>Rotina de gestão da obra</li><li>Indicadores e decisões</li></ul></div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CASES -->
-    <section class="secao" id="cases">
-      <div class="wrap">
-        <p class="sobretitulo">Cases</p>
-        <h2>Problema real, método aplicado, resultado contado com honestidade.</h2>
-        <div class="grade grade--2">
-          <article class="case">
-            <p class="case__seg">Saneamento · Baixada Santista</p>
-            <h3>Do caixa "de cabeça" ao caixa de 13 semanas</h3>
-            <dl>
-              <dt>Situação</dt><dd>Empreiteira de manutenção de redes com caixa pressionado e parte relevante do faturamento presa por falta de documentação (foto, pavimento, boletim).</dd>
-              <dt>O que fizemos</dt><dd>Caixa de 13 semanas com recebíveis por confiança, lista de dinheiro preso com dono e prazo, manual de rotinas, reuniões fixas, controle fiscal, funil comercial e RDO padrão.</dd>
-              <dt>Situação atual</dt><dd>Estrutura implantada; resultados em medição contra a linha de base.</dd>
-            </dl>
-          </article>
-          <article class="case">
-            <p class="case__seg">Pisos industriais · Brasília</p>
-            <h3>Do controle por mensagens a um painel por contrato</h3>
-            <dl>
-              <dt>Situação</dt><dd>Gestão em grupos de mensagem e planilhas soltas; baixa cobertura de RDO, custos sem diária e compras sem nota.</dd>
-              <dt>O que fizemos</dt><dd>Plataforma com produção, contratos, notas, custo e margem por contrato, mão de obra, estoque e conferência automática dos dados.</dd>
-              <dt>Resultado</dt><dd>Contratos e notas conciliados, divergências encontradas e qualidade do dado medida. Ganho estimado de 20 a 25 horas por mês de gestão.</dd>
-            </dl>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section class="secao secao--clara" id="sobre">
-      <div class="wrap sobre">
-        <div>
-          <p class="sobretitulo">Sobre</p>
-          <h2>Engenharia de gestão, com os pés no canteiro.</h2>
-          <p>O Grupo Nery nasceu dentro de obras de saneamento. Conhecemos o lado de quem executa: vala aberta, OS que não baixa, medição que atrasa e caixa que aperta. Nosso trabalho é transformar isso em processo, número e decisão.</p>
-          <p class="js-bio">João D. Souza · consultor e fundador.</p>
-        </div>
-        <ul class="valores">
-          <li><b>Número antes de opinião</b><span>Toda recomendação vem com dado e fonte.</span></li>
-          <li><b>Simples para o campo</b><span>Se o encarregado não usa, não funciona.</span></li>
-          <li><b>Honestidade no resultado</b><span>Estimativa é chamada de estimativa.</span></li>
-          <li><b>Sigilo</b><span>Dados do cliente ficam com o cliente. Cases só com autorização.</span></li>
+    <!-- ATENDER -->
+    <section class="atender">
+      <div class="wrap atender__in">
+        <h2>Estamos prontos para atender:</h2>
+        <ul>
+          <li>Empreiteiras de saneamento</li><li>Construtoras</li><li>Prestadoras de concessionárias</li><li>Concessionárias e SAAEs</li><li>Prefeituras</li><li>Gerenciadoras</li><li>Incorporadoras</li>
         </ul>
+        <a href="#contato" class="botao">Fale conosco</a>
       </div>
     </section>
 
-    <!-- FAQ -->
-    <section class="secao" id="faq">
-      <div class="wrap estreito">
-        <p class="sobretitulo">Perguntas frequentes</p>
-        <h2>Antes de conversar</h2>
-        <details><summary>Preciso trocar meu sistema ou comprar software?</summary><p>Não. Começamos com Excel e WhatsApp, que a equipe já usa. Um sistema próprio só entra quando o volume justificar.</p></details>
-        <details><summary>Quanto tempo até ver diferença?</summary><p>O controle de produção fica de pé em cerca de 30 dias. Nas duas primeiras semanas só medimos, para ter a linha de base; depois atacamos os gargalos.</p></details>
-        <details><summary>Vocês trabalham só com saneamento?</summary><p>Saneamento é a nossa origem, mas o método serve para qualquer obra repetitiva ou com muitas frentes: redes, pavimentação, manutenção e construção civil.</p></details>
-        <details><summary>Como provam o resultado?</summary><p>Linha de base antes de começar, meta escrita, indicador semanal e tradução em dias e em reais a cada trimestre.</p></details>
-        <details><summary>E os dados da minha empresa?</summary><p>Ficam sob sigilo, com cuidado de LGPD: nada de CPF de morador em planilha de produção, e nenhum case publicado sem autorização.</p></details>
+    <!-- REALIZAÇÕES -->
+    <section class="realizacoes" id="realizacoes">
+      <div class="wrap">
+        <p class="rotulo">Realizações</p>
+        <h2 class="titulo-centro claro">Conheça nossos trabalhos.</h2>
+        <p class="sub-centro claro">Casos reais e metodologias aplicadas. Os clientes aparecem de forma anônima, e todo resultado é contado com honestidade: o que foi medido é medido, e o que é estimativa é chamado de estimativa.</p>
+        <div class="grade-obras">
+          <button class="obra" data-obra="0" style="--foto:url('img/obra-canteiro.jpg')"><span class="obra__seg">Saneamento · Case</span><span class="obra__tit">Gestão e caixa de empreiteira de manutenção de redes</span></button>
+          <button class="obra" data-obra="1" style="--foto:url('img/obra-planta.jpg')"><span class="obra__seg">Pisos industriais · Case</span><span class="obra__tit">Do controle por mensagens a um painel por contrato</span></button>
+          <button class="obra" data-obra="2" style="--foto:url('img/obra-armacao.jpg')"><span class="obra__seg">Saneamento · Ferramenta</span><span class="obra__tit">RDO padrão e relato mínimo para manutenção por OS</span></button>
+          <button class="obra" data-obra="3" style="--foto:url('img/obra-ferragem.jpg')"><span class="obra__seg">Produção · Metodologia</span><span class="obra__tit">Painel de controle de produção por obra</span></button>
+          <button class="obra" data-obra="4" style="--foto:url('img/obra-predio.jpg')"><span class="obra__seg">Contratos · Metodologia</span><span class="obra__tit">Mapa do contrato e aula do contrato</span></button>
+          <button class="obra" data-obra="5" style="--foto:url('img/obra-guindaste.jpg')"><span class="obra__seg">Planejamento · Metodologia</span><span class="obra__tit">Planejamento semanal e criticidade por obra</span></button>
+        </div>
       </div>
+    </section>
+
+    <!-- FAIXA CONTATO -->
+    <section class="faixa-contato">
+      <div class="wrap">
+        <p class="rotulo">Contato</p>
+        <h2>Precisa de alguma de nossas soluções?</h2>
+        <a href="#contato" class="botao">Fale conosco</a>
+      </div>
+    </section>
+
+    <!-- CONTEÚDO -->
+    <section class="conteudos" id="conteudo-blog">
+      <div class="wrap">
+        <p class="rotulo">Conteúdo</p>
+        <h2 class="titulo-centro">Ideias e novidades</h2>
+        <div class="grade-posts">
+          <article class="post" style="--foto:url('img/obra-canteiro.jpg')"><p>Relato de <em>2 minutos</em> que vira medição.</p><span>Em breve</span></article>
+          <article class="post" style="--foto:url('img/obra-planta.jpg')"><p>Devido, prometido e <em>provável</em>: como ler o caixa da obra.</p><span>Em breve</span></article>
+          <article class="post" style="--foto:url('img/hero-equipe.jpg')"><p>A obra todo mundo enxerga. <em>O contrato, não.</em></p><span>Em breve</span></article>
+          <article class="post" style="--foto:url('img/obra-ferragem.jpg')"><p>PPC: o indicador que <em>antecipa</em> o atraso.</p><span>Em breve</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE NÓS -->
+    <section class="sobre" id="sobre">
+      <div class="wrap sobre__in">
+        <div class="sobre__txt">
+          <p class="rotulo esq">Sobre nós</p>
+          <h2>Gestão que nasce no canteiro e chega ao caixa.</h2>
+          <p>Obras de saneamento e infraestrutura dependem de muitas frentes ao mesmo tempo: equipes, interferências, fiscalização, OS, medição e recebimento. O Grupo Nery atua exatamente nesse ponto, onde a obra encontra o contrato e o caixa.</p>
+          <p>Trabalhamos com método e com dado: medimos a situação atual antes de mudar qualquer coisa, implantamos ferramentas simples para o campo e acompanhamos os indicadores até o resultado aparecer em dias e em reais.</p>
+          <p class="js-bio">Nosso compromisso é deixar a empresa mais organizada do que a encontramos, com rotinas que funcionam mesmo quando a consultoria sai.</p>
+        </div>
+        <figure class="sobre__foto"><img src="img/sobre-guindastes.jpg" alt="Guindastes em obra ao entardecer" width="1200" height="800"></figure>
+      </div>
+    </section>
+
+    <!-- NÚMEROS -->
+    <section class="numeros">
+      <div class="wrap numeros__in">
+        <div><small>Método em</small><b>10</b><span>etapas, do diagnóstico ao encerramento, com prova de valor a cada trimestre</span></div>
+        <div><small>Padronizamos</small><b>35</b><span>códigos de serviço de água, esgoto e reposição para o apontamento de campo</span></div>
+        <div><small>Relato diário em</small><b>2</b><i>min</i><span>pelo WhatsApp, que viram RDO e painel de produção</span></div>
+      </div>
+    </section>
+
+    <!-- MISSÃO VISÃO VALORES -->
+    <section class="mvv">
+      <div class="wrap">
+        <div class="mvv__cartao">
+          <div><h3>Missão</h3><p>Transformar o trabalho de campo em resultado medido (produção que vira medição, contrato que vira ganho e caixa previsível) para que obras de saneamento e infraestrutura cheguem à população no prazo e no custo certos.</p></div>
+          <div><h3>Visão</h3><p>Ser referência em gestão de produção e de contratos para empresas que executam obras de saneamento no Brasil, com método próprio e resultados comprovados.</p></div>
+          <div><h3>Valores</h3><p>Nosso trabalho se apoia em cinco pilares: número antes de opinião, simplicidade para o campo, honestidade no resultado, sigilo e inquietude para repensar a solução todos os dias.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA DIVIDIDO -->
+    <section class="cta">
+      <div class="cta__txt">
+        <h2>Gestão de obra completa, do canteiro ao caixa.</h2>
+        <p>Conte com engenharia de gestão para organizar produção, contratos e financeiro das suas obras.</p>
+        <a href="#contato" class="botao-linha botao-linha--claro">Fale conosco</a>
+      </div>
+      <div class="cta__foto" style="--foto:url('img/cta-cidade.jpg')" role="img" aria-label="Guindastes e edifícios em construção"></div>
     </section>
 
     <!-- CONTATO -->
-    <section class="secao secao--escura" id="contato">
-      <div class="wrap contato">
+    <section class="contato" id="contato">
+      <div class="wrap contato__in">
         <div>
-          <p class="sobretitulo">Contato</p>
+          <p class="rotulo esq">Fale conosco</p>
           <h2>Vamos olhar a sua obra?</h2>
           <p>Conte em poucas linhas o que está travando. Respondemos com os próximos passos para um diagnóstico.</p>
           <div class="contato__canais">
-            <a class="botao js-whats" href="#contato">Falar no WhatsApp</a>
-            <a class="botao botao--linha-clara js-email" href="#contato">Enviar e-mail</a>
+            <a class="botao js-whats" href="#contato">WhatsApp</a>
+            <a class="botao-linha js-email" href="#contato">E-mail</a>
           </div>
         </div>
         <form class="form" id="form-contato" novalidate>
@@ -232,12 +242,31 @@ PAROU: espera da contratante | CLI</code></pre></article>
     </section>
   </main>
 
+  <!-- RODAPÉ -->
   <footer class="rodape">
     <div class="wrap rodape__in">
-      <span>© <span id="ano">2026</span> Grupo Nery · Gestão de obras</span>
-      <a href="#inicio">Voltar ao topo ↑</a>
+      <span>Copyright © <span id="ano">2026</span> Grupo Nery. Todos os direitos reservados.</span>
+      <div class="redes">
+        <a class="js-rede" data-rede="linkedin" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.9 8.6H3.6V20h3.3V8.6zM5.2 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.5c0-3-1.6-5.1-4.5-5.1-1.5 0-2.5.8-3 1.5V8.6H9.7V20H13v-6c0-1.4.5-2.6 2-2.6s1.8 1.3 1.8 2.7V20h3.3v-6.5z"/></svg></a>
+        <a class="js-rede" data-rede="facebook" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.3H8.1v3h2.5V21h2.9z"/></svg></a>
+        <a class="js-rede" data-rede="instagram" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 7.3a4.7 4.7 0 1 0 0 9.4 4.7 4.7 0 0 0 0-9.4zm0 7.7a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm6-7.9a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0zM21 8.1c0-1.6-.4-3-1.6-4.1C18.3 2.9 16.9 2.5 15.3 2.5H8.7c-1.6 0-3 .4-4.1 1.5S3 6.5 3 8.1v7.8c0 1.6.4 3 1.6 4.1 1.1 1.1 2.5 1.5 4.1 1.5h6.6c1.6 0 3-.4 4.1-1.5 1.1-1.1 1.6-2.5 1.6-4.1V8.1zm-2 7.9c0 1.1-.3 2-.9 2.6-.7.7-1.6 1-2.7 1H8.6c-1.1 0-2-.3-2.7-1-.6-.6-.9-1.5-.9-2.6V8c0-1.1.3-2 .9-2.6.7-.7 1.6-1 2.7-1h6.8c1.1 0 2 .3 2.7 1 .6.6.9 1.5.9 2.6v8z"/></svg></a>
+      </div>
     </div>
   </footer>
+
+  <!-- MODAL DE REALIZAÇÕES -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" hidden>
+    <div class="modal__caixa">
+      <button class="modal__fechar" aria-label="Fechar">×</button>
+      <div class="modal__foto"><img src="" alt="" id="modal-img"><div class="modal__setas"><button aria-label="Anterior" data-dir="-1">‹</button><button aria-label="Próximo" data-dir="1">›</button></div></div>
+      <div class="modal__txt">
+        <p class="modal__seg" id="modal-seg"></p>
+        <h3 id="modal-titulo"></h3>
+        <p id="modal-desc"></p>
+        <ul id="modal-lista"></ul>
+      </div>
+    </div>
+  </div>
 
   <a class="whats-flutuante js-whats" href="#contato" aria-label="Falar no WhatsApp">
     <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.5c.2.2 2.4 3.7 5.8 5.1 2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5s.3-1.3.2-1.5l-.6-.3z"/></svg>

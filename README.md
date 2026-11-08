@@ -7,10 +7,10 @@ Site institucional da consultoria de gestão de obras do Grupo Nery. É **estát
 ## Arquivos
 | Arquivo | O que é |
 |---|---|
-| `index.html` | Página única: início, dores, serviços, método, ferramentas, cases, sobre, perguntas frequentes e contato |
-| `styles.css` | Visual: azul-marinho e verde, responsivo, modo escuro automático |
-| `script.js` | Menu do celular, botões de WhatsApp e e-mail, formulário. **A configuração fica no topo** |
-| `img/rdo-modelo.png` | Imagem do RDO padrão (gerada do vault GESTAO) |
+| `index.html` | Página única no layout de consultoria de engenharia: carrossel, soluções por perfil de cliente (abas), realizações com modal, conteúdo, sobre nós, números, missão/visão/valores, chamada final, contato |
+| `styles.css` | Visual: branco, cinza-grafite e verde Nery; responsivo |
+| `script.js` | **Configuração no topo** (WhatsApp, e-mail, redes) + textos das Realizações (modal), carrossel, abas, formulário |
+| `img/` | Fotos provisórias do Unsplash (créditos em `img/CREDITOS.md`): trocar por fotos das obras |
 | `favicon.svg` | Ícone provisório "GN" (trocar pela logo oficial) |
 
 ## Antes de publicar: preencher em `script.js`
@@ -18,12 +18,16 @@ Site institucional da consultoria de gestão de obras do Grupo Nery. É **estát
 const CONFIG = {
   whatsapp: "5513999999999",   // DDI + DDD + número, só dígitos
   email: "contato@seudominio.com.br",
-  bio: "João D. Souza · engenheiro civil, CREA-SP nº ..., X anos em obras de saneamento.",
+  redes: { linkedin: "https://...", facebook: "", instagram: "https://..." },
 };
 ```
 Enquanto estiverem vazios:
 - os botões levam para o formulário;
-- o botão flutuante de WhatsApp fica escondido.
+- o botão flutuante de WhatsApp e os ícones de redes vazios ficam escondidos.
+
+Para trocar fotos: substitua o arquivo em `img/` mantendo o nome.
+Para editar Realizações: lista `OBRAS` no `script.js`.
+Para os números grandes: seção `numeros` do `index.html` (use só números comprovados).
 
 ## Publicar na Vercel
 1. vercel.com → **Add New → Project** → importar `Joaodesouzanery/SITE-GRUPO-NERY`.
@@ -38,4 +42,4 @@ Alternativa sem custo: GitHub Pages (*Settings → Pages → Deploy from branch*
 - Nada de dado pessoal (CPF, telefones de terceiros) no site.
 
 ## Referência
-A estrutura de seções foi pensada a partir da análise do site da Barufi Consultoria. Os textos e a identidade visual são próprios. A análise está no vault GESTAO, em `06_Conteudo/Site_Grupo_Nery.md`.
+O layout segue o padrão do site da Barufi Consultoria (referência pedida pelo João). Nome, logo e textos são do Grupo Nery. A análise está no vault GESTAO, em `06_Conteudo/Site_Grupo_Nery.md`.
