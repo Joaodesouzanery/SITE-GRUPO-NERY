@@ -7,18 +7,18 @@
    ============================================================ */
 const CONFIG = {
   whatsapp: "",
-  email: "",
+  email: "neryadministrativo@gmail.com",
   redes: { linkedin: "", facebook: "", instagram: "" },
   mensagemPadrao: "Olá! Vim pelo site do Grupo Nery e gostaria de conversar sobre a gestão das nossas obras.",
 };
 
 /* Realizações (modal). Clientes sempre anônimos; resultado só quando medido. */
 const OBRAS = [
-  { seg: "Saneamento · Case", img: "img/obra-canteiro.jpg", titulo: "Gestão e caixa de empreiteira de manutenção de redes",
-    desc: "Empreiteira de manutenção e obras de redes de água e esgoto para concessionária, com caixa pressionado e parte relevante do faturamento presa por falta de documentação. Estruturamos:",
+  { seg: "Saneamento · WCR Saneamento", img: "img/obra-canteiro.jpg", titulo: "Gestão, caixa de 13 semanas e rotinas de uma empreiteira de redes",
+    desc: "WCR Saneamento: manutenção e obras de redes de água e esgoto na Baixada Santista, com caixa pressionado e parte relevante do faturamento presa por falta de documentação. Estruturamos:",
     itens: ["Caixa de 13 semanas com recebíveis em devido, prometido e provável", "Lista de dinheiro preso com dono, motivo e prazo", "Modelo de gestão, manual de rotinas e reuniões fixas", "Controle fiscal com alerta de validade de certidões", "Painel de gestão por obra e processo comercial com funil", "RDO padrão e relato mínimo pelo WhatsApp"] },
-  { seg: "Pisos industriais · Case", img: "img/obra-planta.jpg", titulo: "Do controle por mensagens a um painel por contrato",
-    desc: "Empresa com cerca de 14 frentes e 5 contratos ativos, com gestão em grupos de mensagem e planilhas soltas. Construímos uma plataforma com:",
+  { seg: "Pisos industriais · Compizzo", img: "img/obra-planta.jpg", titulo: "Do controle por mensagens a um painel por contrato",
+    desc: "Compizzo: pintura e pisos epóxi em Brasília, com cerca de 14 frentes e 5 contratos ativos geridos por grupos de mensagem e planilhas soltas. Construímos uma plataforma com:",
     itens: ["Dashboard por obra e por contrato", "Contratos e notas fiscais conciliados", "Receita, custo, lucro e margem por contrato", "Cobertura diária de RDO e produtividade", "Mão de obra, presença, estoque e compras", "Conferência automática dos dados; ganho estimado de 20 a 25 h/mês de gestão"] },
   { seg: "Saneamento · Ferramenta", img: "img/obra-armacao.jpg", titulo: "RDO padrão e relato mínimo para manutenção por OS",
     desc: "Relatório diário de obra com a marca do cliente e da contratante, alimentado por uma mensagem curta do encarregado:",
@@ -43,7 +43,7 @@ const OBRAS = [
   const linkEmail = (a, c) => (CONFIG.email ? `mailto:${CONFIG.email}?subject=${encodeURIComponent(a)}&body=${encodeURIComponent(c)}` : null);
   $$(".js-whats").forEach((a) => { const u = linkWhats(CONFIG.mensagemPadrao); if (u) { a.href = u; a.target = "_blank"; a.rel = "noopener"; } });
   $$(".js-email").forEach((a) => { const u = linkEmail("Contato pelo site", CONFIG.mensagemPadrao); if (u) a.href = u; else a.hidden = true; });
-  if (!CONFIG.whatsapp) $(".whats-flutuante")?.setAttribute("hidden", "");
+  if (!CONFIG.whatsapp) $$(".whats-flutuante, .contato__canais .js-whats").forEach((el) => el.setAttribute("hidden", ""));
   $$(".js-rede").forEach((a) => { const u = CONFIG.redes[a.dataset.rede]; if (u) { a.href = u; a.target = "_blank"; a.rel = "noopener"; } else a.hidden = true; });
 
   /* menu celular */

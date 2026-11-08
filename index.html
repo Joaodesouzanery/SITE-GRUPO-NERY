@@ -9,10 +9,10 @@
   <meta property="og:description" content="Produção que vira medição, contrato que vira resultado e caixa previsível.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="img/hero-terraplenagem.jpg">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="img/simbolo-grupo-nery.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,10 +21,7 @@
   <!-- TOPO -->
   <header class="topo" id="topo">
     <div class="wrap topo__in">
-      <a href="#inicio" class="marca" aria-label="Grupo Nery, início">
-        <svg class="marca__icone" viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="6" fill="currentColor"/><text x="20" y="26.5" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800" fill="#fff">GN</text><rect x="9" y="30" width="22" height="2.6" rx="1.3" fill="var(--verde)"/></svg>
-        <span class="marca__nome">GRUPO <b>NERY</b></span>
-      </a>
+      <a href="#inicio" class="marca" aria-label="Grupo Nery, início"><img src="img/logo-grupo-nery.png" alt="Grupo Nery" width="210" height="44"></a>
       <nav class="menu" id="menu" aria-label="Principal">
         <a href="#inicio">Home</a>
         <a href="#servicos">Serviços</a>
@@ -90,34 +87,32 @@
         <p class="sub-centro">Usamos Lean Construction e Last Planner, PMBOK, valor agregado, linha de balanço e ferramentas próprias de controle de produção para apoiar quem executa e quem contrata obras.</p>
         <p class="chamada-perfis">Atendemos diferentes <em>perfis de clientes</em>, com soluções para <b>cada fase</b> da obra:</p>
 
-        <div class="abas" data-abas>
-          <div class="abas__lista" role="tablist" aria-label="Perfis de cliente">
+        <div class="perfis" data-abas>
+          <div class="abas__lista perfis__chips" role="tablist" aria-label="Perfis de cliente">
             <button role="tab" aria-selected="true" aria-controls="aba-empreiteiras" id="t-empreiteiras">Empreiteiras e construtoras</button>
             <button role="tab" aria-selected="false" aria-controls="aba-prestadoras" id="t-prestadoras" tabindex="-1">Prestadoras de concessionárias</button>
             <button role="tab" aria-selected="false" aria-controls="aba-contratantes" id="t-contratantes" tabindex="-1">Concessionárias, SAAEs e prefeituras</button>
             <button role="tab" aria-selected="false" aria-controls="aba-profissionais" id="t-profissionais" tabindex="-1">Profissionais</button>
           </div>
-          <div class="abas__caixa">
-            <div class="abas__painel" role="tabpanel" id="aba-empreiteiras" aria-labelledby="t-empreiteiras">
-              <div class="bloco"><small>Diagnóstico</small><h3>Diagnóstico e plano</h3><ul><li>Visita ao trecho e entrevistas</li><li>Linha de base com números</li><li>Mapa do contrato</li><li>Plano de ação de 90 dias</li></ul></div>
-              <div class="bloco"><small>Execução</small><h3>Controle de produção</h3><ul><li>RDO padrão com a sua marca</li><li>Relato mínimo pelo WhatsApp</li><li>Painel de produção por obra</li><li>Planejamento semanal (Last Planner)</li></ul></div>
-              <div class="bloco"><small>Gestão</small><h3>Financeiro e governança</h3><ul><li>Caixa de 13 semanas</li><li>Dinheiro preso com dono e prazo</li><li>Resultado por obra</li><li>Manual de rotinas e reuniões</li></ul></div>
-            </div>
-            <div class="abas__painel" role="tabpanel" id="aba-prestadoras" aria-labelledby="t-prestadoras" hidden>
-              <div class="bloco"><small>Medição</small><h3>Da OS ao recebimento</h3><ul><li>OS executada → vistoriada → baixada</li><li>Evidência por item de medição</li><li>Conciliação da medição</li><li>Ciclo da OS e pendências</li></ul></div>
-              <div class="bloco"><small>Contrato</small><h3>Gestão contratual</h3><ul><li>Mapa e aula do contrato</li><li>Serviços sem OS e interferências</li><li>Aditivos e pleitos (com jurídico parceiro)</li><li>Reajuste e prazos de aviso</li></ul></div>
-              <div class="bloco"><small>Campo</small><h3>Produtividade</h3><ul><li>Produção por equipe e por código</li><li>Causas de não cumprimento</li><li>Retrabalho e custo da qualidade</li><li>Criticidade por obra</li></ul></div>
-            </div>
-            <div class="abas__painel" role="tabpanel" id="aba-contratantes" aria-labelledby="t-contratantes" hidden>
-              <div class="bloco"><small>Acompanhamento</small><h3>Painel de obras</h3><ul><li>Previsto x realizado por contrato</li><li>Criticidade (verde, amarelo, vermelho)</li><li>Relatório quinzenal</li></ul></div>
-              <div class="bloco"><small>Fiscalização</small><h3>Padrão para contratadas</h3><ul><li>Modelo de RDO e evidência</li><li>Critérios de medição claros</li><li>Rotina de vistoria e baixa</li></ul></div>
-              <div class="bloco"><small>Planejamento</small><h3>Frentes liberadas</h3><ul><li>Look-ahead de 4 a 6 semanas</li><li>Mapa de restrições e interferências</li><li>Reunião de coordenação</li></ul></div>
-            </div>
-            <div class="abas__painel" role="tabpanel" id="aba-profissionais" aria-labelledby="t-profissionais" hidden>
-              <div class="bloco"><small>Capacitação</small><h3>Treinamentos</h3><ul><li>Last Planner e PPC na prática</li><li>RDO e apontamento de produção</li><li>Leitura de contrato para engenheiros</li></ul></div>
-              <div class="bloco"><small>Ferramentas</small><h3>Modelos prontos</h3><ul><li>RDO, painel de produção e mensagens</li><li>Caixa de 13 semanas</li><li>Templates de reunião e plano de ação</li></ul></div>
-              <div class="bloco"><small>Acompanhamento</small><h3>Mentoria de gestão</h3><ul><li>Engenheiros e encarregados</li><li>Rotina de gestão da obra</li><li>Indicadores e decisões</li></ul></div>
-            </div>
+          <div class="abas__painel trilha" role="tabpanel" id="aba-empreiteiras" aria-labelledby="t-empreiteiras">
+            <article class="etapa"><span class="etapa__num">01</span><small>Diagnóstico</small><h3>Diagnóstico e plano</h3><ul><li>Visita ao trecho e entrevistas</li><li>Linha de base com números</li><li>Mapa do contrato</li><li>Plano de ação de 90 dias</li></ul></article>
+            <article class="etapa"><span class="etapa__num">02</span><small>Execução</small><h3>Controle de produção</h3><ul><li>RDO padrão com a sua marca</li><li>Relato mínimo pelo WhatsApp</li><li>Painel de produção por obra</li><li>Planejamento semanal (Last Planner)</li></ul></article>
+            <article class="etapa"><span class="etapa__num">03</span><small>Gestão</small><h3>Financeiro e governança</h3><ul><li>Caixa de 13 semanas</li><li>Dinheiro preso com dono e prazo</li><li>Resultado por obra</li><li>Manual de rotinas e reuniões</li></ul></article>
+          </div>
+          <div class="abas__painel trilha" role="tabpanel" id="aba-prestadoras" aria-labelledby="t-prestadoras" hidden>
+            <article class="etapa"><span class="etapa__num">01</span><small>Medição</small><h3>Da OS ao recebimento</h3><ul><li>OS executada → vistoriada → baixada</li><li>Evidência por item de medição</li><li>Conciliação da medição</li><li>Ciclo da OS e pendências</li></ul></article>
+            <article class="etapa"><span class="etapa__num">02</span><small>Contrato</small><h3>Gestão contratual</h3><ul><li>Mapa e aula do contrato</li><li>Serviços sem OS e interferências</li><li>Aditivos e pleitos (com jurídico parceiro)</li><li>Reajuste e prazos de aviso</li></ul></article>
+            <article class="etapa"><span class="etapa__num">03</span><small>Campo</small><h3>Produtividade</h3><ul><li>Produção por equipe e por código</li><li>Causas de não cumprimento</li><li>Retrabalho e custo da qualidade</li><li>Criticidade por obra</li></ul></article>
+          </div>
+          <div class="abas__painel trilha" role="tabpanel" id="aba-contratantes" aria-labelledby="t-contratantes" hidden>
+            <article class="etapa"><span class="etapa__num">01</span><small>Acompanhamento</small><h3>Painel de obras</h3><ul><li>Previsto x realizado por contrato</li><li>Criticidade por obra</li><li>Relatório quinzenal</li></ul></article>
+            <article class="etapa"><span class="etapa__num">02</span><small>Fiscalização</small><h3>Padrão para contratadas</h3><ul><li>Modelo de RDO e evidência</li><li>Critérios de medição claros</li><li>Rotina de vistoria e baixa</li></ul></article>
+            <article class="etapa"><span class="etapa__num">03</span><small>Planejamento</small><h3>Frentes liberadas</h3><ul><li>Look-ahead de 4 a 6 semanas</li><li>Mapa de restrições e interferências</li><li>Reunião de coordenação</li></ul></article>
+          </div>
+          <div class="abas__painel trilha" role="tabpanel" id="aba-profissionais" aria-labelledby="t-profissionais" hidden>
+            <article class="etapa"><span class="etapa__num">01</span><small>Capacitação</small><h3>Treinamentos</h3><ul><li>Last Planner e PPC na prática</li><li>RDO e apontamento de produção</li><li>Leitura de contrato para engenheiros</li></ul></article>
+            <article class="etapa"><span class="etapa__num">02</span><small>Ferramentas</small><h3>Modelos prontos</h3><ul><li>RDO, painel de produção e mensagens</li><li>Caixa de 13 semanas</li><li>Reunião e plano de ação</li></ul></article>
+            <article class="etapa"><span class="etapa__num">03</span><small>Acompanhamento</small><h3>Mentoria de gestão</h3><ul><li>Engenheiros e encarregados</li><li>Rotina de gestão da obra</li><li>Indicadores e decisões</li></ul></article>
           </div>
         </div>
       </div>
@@ -139,10 +134,10 @@
       <div class="wrap">
         <p class="rotulo">Realizações</p>
         <h2 class="titulo-centro claro">Conheça nossos trabalhos.</h2>
-        <p class="sub-centro claro">Casos reais e metodologias aplicadas. Os clientes aparecem de forma anônima, e todo resultado é contado com honestidade: o que foi medido é medido, e o que é estimativa é chamado de estimativa.</p>
+        <p class="sub-centro claro">Casos reais e metodologias aplicadas. Todo resultado é contado com honestidade: o que foi medido é medido, e o que é estimativa é chamado de estimativa.</p>
         <div class="grade-obras">
-          <button class="obra" data-obra="0" style="--foto:url('img/obra-canteiro.jpg')"><span class="obra__seg">Saneamento · Case</span><span class="obra__tit">Gestão e caixa de empreiteira de manutenção de redes</span></button>
-          <button class="obra" data-obra="1" style="--foto:url('img/obra-planta.jpg')"><span class="obra__seg">Pisos industriais · Case</span><span class="obra__tit">Do controle por mensagens a um painel por contrato</span></button>
+          <button class="obra" data-obra="0" style="--foto:url('img/obra-canteiro.jpg')"><span class="obra__seg">Saneamento · WCR Saneamento</span><span class="obra__tit">Gestão, caixa de 13 semanas e rotinas de uma empreiteira de redes</span></button>
+          <button class="obra" data-obra="1" style="--foto:url('img/obra-planta.jpg')"><span class="obra__seg">Pisos industriais · Compizzo</span><span class="obra__tit">Do controle por mensagens a um painel por contrato</span></button>
           <button class="obra" data-obra="2" style="--foto:url('img/obra-armacao.jpg')"><span class="obra__seg">Saneamento · Ferramenta</span><span class="obra__tit">RDO padrão e relato mínimo para manutenção por OS</span></button>
           <button class="obra" data-obra="3" style="--foto:url('img/obra-ferragem.jpg')"><span class="obra__seg">Produção · Metodologia</span><span class="obra__tit">Painel de controle de produção por obra</span></button>
           <button class="obra" data-obra="4" style="--foto:url('img/obra-predio.jpg')"><span class="obra__seg">Contratos · Metodologia</span><span class="obra__tit">Mapa do contrato e aula do contrato</span></button>
@@ -182,7 +177,15 @@
           <h2>Gestão que nasce no canteiro e chega ao caixa.</h2>
           <p>Obras de saneamento e infraestrutura dependem de muitas frentes ao mesmo tempo: equipes, interferências, fiscalização, OS, medição e recebimento. O Grupo Nery atua exatamente nesse ponto, onde a obra encontra o contrato e o caixa.</p>
           <p>Trabalhamos com método e com dado: medimos a situação atual antes de mudar qualquer coisa, implantamos ferramentas simples para o campo e acompanhamos os indicadores até o resultado aparecer em dias e em reais.</p>
-          <p class="js-bio">Nosso compromisso é deixar a empresa mais organizada do que a encontramos, com rotinas que funcionam mesmo quando a consultoria sai.</p>
+          <p>Nosso compromisso é deixar a empresa mais organizada do que a encontramos, com rotinas que funcionam mesmo quando a consultoria sai.</p>
+          <div class="equipe">
+            <img src="img/simbolo-grupo-nery.png" alt="" width="56" height="56">
+            <div>
+              <b>Felipe Coelho Nery</b>
+              <span>Engenheiro Civil · CREA 26655/D-DF · Responsável técnico</span>
+              <p>Atua em saneamento desde 2014, da fiscalização na CAESB à gestão de contratos de redes, interceptores, elevatórias e ETEs para CAESB e SABESP, incluindo o programa Se Liga na Rede. MBA em Engenharia Sanitária e Recursos Hídricos e pós-graduação em Gerenciamento de Projetos. Fundador da ConstruData.</p>
+            </div>
+          </div>
         </div>
         <figure class="sobre__foto"><img src="img/sobre-guindastes.jpg" alt="Guindastes em obra ao entardecer" width="1200" height="800"></figure>
       </div>
@@ -191,9 +194,9 @@
     <!-- NÚMEROS -->
     <section class="numeros">
       <div class="wrap numeros__in">
-        <div><small>Método em</small><b>10</b><span>etapas, do diagnóstico ao encerramento, com prova de valor a cada trimestre</span></div>
-        <div><small>Padronizamos</small><b>35</b><span>códigos de serviço de água, esgoto e reposição para o apontamento de campo</span></div>
-        <div><small>Relato diário em</small><b>2</b><i>min</i><span>pelo WhatsApp, que viram RDO e painel de produção</span></div>
+        <div><small>Nossa equipe já executou mais de</small><b>100</b><i>km</i><span>de redes de esgoto e interceptores</span></div>
+        <div><small>E implantou mais de</small><b>12</b><span>estações elevatórias de esgoto, além de ETEs</span></div>
+        <div><small>Já geriu até</small><b>5</b><span>contratos públicos simultâneos de R$ 10 a 20 milhões cada</span></div>
       </div>
     </section>
 
@@ -245,7 +248,7 @@
   <!-- RODAPÉ -->
   <footer class="rodape">
     <div class="wrap rodape__in">
-      <span>Copyright © <span id="ano">2026</span> Grupo Nery. Todos os direitos reservados.</span>
+      <span><img class="rodape__logo" src="img/logo-grupo-nery-branca.png" alt="Grupo Nery" width="170" height="36"> <span>Copyright © <span id="ano">2026</span> Grupo Nery. Todos os direitos reservados.</span></span>
       <div class="redes">
         <a class="js-rede" data-rede="linkedin" href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.9 8.6H3.6V20h3.3V8.6zM5.2 3.5a1.9 1.9 0 1 0 0 3.8 1.9 1.9 0 0 0 0-3.8zM20.4 13.5c0-3-1.6-5.1-4.5-5.1-1.5 0-2.5.8-3 1.5V8.6H9.7V20H13v-6c0-1.4.5-2.6 2-2.6s1.8 1.3 1.8 2.7V20h3.3v-6.5z"/></svg></a>
         <a class="js-rede" data-rede="facebook" href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5H16l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.3H8.1v3h2.5V21h2.9z"/></svg></a>
