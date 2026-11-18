@@ -37,3 +37,9 @@ Também:
 
 ## Referência
 A estrutura de seções teve como referência o site da Barufi Consultoria. A identidade visual (azul-petróleo único, tipografia, Soluções em 3 etapas) é própria do Grupo Nery. Guia no vault GESTAO: `06_Conteudo/Identidade_Visual_Grupo_Nery.md`.
+
+## Atualização de 18/11/2026
+- Tipografia: Hanken Grotesk (corpo) e Space Grotesk (títulos), hospedadas em `fonts/` (licença OFL, arquivos `OFL-*.txt`). Sem Google Fonts.
+- Cor: `#368CFF` (assinatura) e `#1A63C9` (texto pequeno e botões).
+- Seções novas: problemas, método (com `material/Metodo-Grupo-Nery-resumo.pdf`), capacidades, Conciliação 3 Vias (em piloto), jornada e FAQ.
+- Regras: nada de número de resultado sem fonte; serviço em piloto sempre marcado; sem logo de terceiros.
