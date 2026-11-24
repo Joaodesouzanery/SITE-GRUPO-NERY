@@ -14,9 +14,15 @@ const CONFIG = {
 
 /* Realizações (modal). Clientes sempre anônimos; resultado só quando medido. */
 const OBRAS = [
-  { seg: "Saneamento · WCR Saneamento", img: "img/obra-canteiro.jpg", titulo: "Gestão, caixa de 13 semanas e rotinas de uma empreiteira de redes",
-    desc: "WCR Saneamento, empresa do Grupo Nery: manutenção e obras de redes de água e esgoto na Baixada Santista, com caixa pressionado e parte relevante do faturamento presa por falta de documentação. Estruturamos:",
-    itens: ["Caixa de 13 semanas com recebíveis em devido, prometido e provável", "Lista de dinheiro preso com dono, motivo e prazo", "Modelo de gestão, manual de rotinas e reuniões fixas", "Controle fiscal com alerta de validade de certidões", "Painel de gestão por obra e processo comercial com funil", "RDO padrão e relato mínimo pelo WhatsApp", "Resultado ainda em medição: publicaremos o antes e o depois quando houver linha de base e período suficiente"] },
+  { seg: "Saneamento · WCR Saneamento", img: "img/obra-canteiro.jpg", titulo: "Medição, caixa e rotina de uma empreiteira de redes em 5 semanas",
+    desc: "WCR Saneamento: manutenção e obras de redes de água e esgoto. Conferimos o que o campo fez, organizamos as planilhas e montamos a rotina de gestão. O que fizemos e o que mudou:",
+    periodo: "5 semanas, de 12/10 a 19/11/2026",
+    itens: [],
+    blocos: [
+      { t: "Eficiência", itens: ["Medição lançada triplicada em 5 semanas (serviço que já estava feito e não estava lançado)", "Serviço feito e não baixado no sistema da concessionária localizado na primeira semana de conferência diária"] },
+      { t: "Organização", itens: ["163 erros achados nas planilhas, versão única de trabalho", "Um dono por área, calendário fixo de pagamento e reunião semanal com números"] },
+      { t: "Visualização", itens: ["Caixa de 13 semanas: a empresa passou a ver quando o caixa aperta", "Resultado por obra, com custo × medição"] },
+    ] },
   { seg: "Pisos industriais · Compizzo", img: "img/obra-planta.jpg", titulo: "Do controle por mensagens a um painel por contrato",
     desc: "Compizzo: pintura e pisos epóxi em Brasília, com cerca de 14 frentes e 5 contratos ativos geridos por grupos de mensagem e planilhas soltas. Construímos uma plataforma com:",
     itens: ["Dashboard por obra e por contrato", "Contratos e notas fiscais conciliados", "Receita, custo, lucro e margem por contrato", "Cobertura diária de RDO e produtividade", "Mão de obra, presença, estoque e compras", "Conferência automática dos dados; ganho estimado de 20 a 25 h/mês de gestão"] },
@@ -91,7 +97,17 @@ const OBRAS = [
     idx = (i + OBRAS.length) % OBRAS.length; const o = OBRAS[idx];
     $("#modal-img").src = o.img; $("#modal-img").alt = o.titulo;
     $("#modal-seg").textContent = o.seg; $("#modal-titulo").textContent = o.titulo; $("#modal-desc").textContent = o.desc;
-    $("#modal-lista").replaceChildren(...o.itens.map((t) => Object.assign(document.createElement("li"), { textContent: t })));
+    const li = (t) => Object.assign(document.createElement("li"), { textContent: t });
+    $("#modal-lista").replaceChildren(...(o.itens || []).map(li));
+    $("#modal-lista").hidden = !(o.itens && o.itens.length);
+    const blocos = (o.blocos || []).map((b) => {
+      const d = document.createElement("div"); d.className = "modal__bloco";
+      const h = Object.assign(document.createElement("h4"), { textContent: b.t });
+      const ul = document.createElement("ul"); ul.append(...b.itens.map(li));
+      d.append(h, ul); return d;
+    });
+    if (o.periodo) blocos.unshift(Object.assign(document.createElement("p"), { className: "modal__periodo", textContent: o.periodo }));
+    $("#modal-blocos").replaceChildren(...blocos);
   }
   function abrir(i, btn) { origem = btn; mostrar(i); modal.hidden = false; document.body.style.overflow = "hidden"; $(".modal__fechar").focus(); }
   function fechar() { modal.hidden = true; document.body.style.overflow = ""; origem?.focus(); }

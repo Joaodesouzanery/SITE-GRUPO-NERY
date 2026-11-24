@@ -11,7 +11,7 @@
   <meta property="og:image" content="img/hero-terraplenagem.jpg">
   <link rel="icon" href="img/simbolo-grupo-nery.png" type="image/png">
   <link rel="preload" href="fonts/hanken-grotesk-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/space-grotesk-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/hanken-grotesk-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -41,7 +41,7 @@
           <div class="slide__txt">
             <h1>Produzido, medido e faturado: três números que precisam <em>bater</em></h1>
             <p>O Método Grupo Nery liga o relato de campo ao contrato e ao caixa, para empresas que executam obras de saneamento e infraestrutura. Medimos, guardamos a prova e decidimos com número.</p>
-            <a href="#metodo" class="botao">Conhecer o método</a>
+            <div class="slide__acoes"><a href="#metodo" class="botao">Conhecer o método</a><a href="#realizacoes" class="botao-linha">Ver resultados</a></div>
           </div>
         </article>
         <article class="slide" style="--foto:url('img/hero-estacao.jpg')">
@@ -234,8 +234,16 @@
         <p class="rotulo">Realizações</p>
         <h2 class="titulo-centro claro">Conheça nossos trabalhos.</h2>
         <p class="sub-centro claro">Casos reais e metodologias aplicadas. Todo resultado é contado com honestidade: o que foi medido é medido, e o que é estimativa é chamado de estimativa.</p>
+        <div class="resultados" role="region" aria-labelledby="resultados-tit">
+          <p class="resultados__cab" id="resultados-tit"><b>Case WCR Saneamento</b> · 5 semanas, de 12/10 a 19/11/2026</p>
+          <div class="resultados__grade">
+            <div class="resultado"><h3>Eficiência</h3><ul><li><b>Medição lançada triplicada</b> em 5 semanas (serviço que já estava feito e não estava lançado)</li><li><b>Serviço feito e não baixado</b> no sistema da concessionária localizado na primeira semana de conferência diária</li></ul></div>
+            <div class="resultado"><h3>Organização</h3><ul><li><b>163 erros achados</b> nas planilhas, versão única de trabalho</li><li><b>Um dono por área</b>, calendário fixo de pagamento e reunião semanal com números</li></ul></div>
+            <div class="resultado"><h3>Visualização</h3><ul><li><b>Caixa de 13 semanas:</b> a empresa passou a ver quando o caixa aperta</li><li><b>Resultado por obra</b>, com custo × medição</li></ul></div>
+          </div>
+        </div>
         <div class="grade-obras">
-          <button class="obra" data-obra="0" style="--foto:url('img/obra-canteiro.jpg')"><span class="obra__seg">Saneamento · WCR Saneamento</span><span class="obra__tit">Gestão, caixa de 13 semanas e rotinas de uma empreiteira de redes</span></button>
+          <button class="obra" data-obra="0" style="--foto:url('img/obra-canteiro.jpg')"><span class="obra__seg">Saneamento · WCR Saneamento</span><span class="obra__tit">Medição, caixa e rotina de uma empreiteira de redes em 5 semanas</span></button>
           <button class="obra" data-obra="1" style="--foto:url('img/obra-planta.jpg')"><span class="obra__seg">Pisos industriais · Compizzo</span><span class="obra__tit">Do controle por mensagens a um painel por contrato</span></button>
           <button class="obra" data-obra="2" style="--foto:url('img/obra-armacao.jpg')"><span class="obra__seg">Saneamento · Ferramenta</span><span class="obra__tit">RDO padrão e relato mínimo para manutenção por OS</span></button>
           <button class="obra" data-obra="3" style="--foto:url('img/obra-ferragem.jpg')"><span class="obra__seg">Produção · Metodologia</span><span class="obra__tit">Painel de controle de produção por obra</span></button>
@@ -382,6 +390,7 @@
         <h3 id="modal-titulo"></h3>
         <p id="modal-desc"></p>
         <ul id="modal-lista"></ul>
+        <div id="modal-blocos"></div>
       </div>
     </div>
   </div>
